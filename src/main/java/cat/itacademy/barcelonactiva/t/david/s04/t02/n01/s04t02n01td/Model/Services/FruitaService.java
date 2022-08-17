@@ -10,7 +10,7 @@ import cat.itacademy.barcelonactiva.t.david.s04.t02.n01.s04t02n01td.Model.Domain
 import cat.itacademy.barcelonactiva.t.david.s04.t02.n01.s04t02n01td.Model.Repository.FruitaRepository;
 
 @Service
-public class FruitaService {
+public class FruitaService implements IFruitaService {
     @Autowired
     private FruitaRepository fruitaRepository;
 	
