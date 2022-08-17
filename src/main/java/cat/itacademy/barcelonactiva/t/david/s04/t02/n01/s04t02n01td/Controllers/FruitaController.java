@@ -15,13 +15,13 @@ import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.bind.annotation.PathVariable;
 
 import cat.itacademy.barcelonactiva.t.david.s04.t02.n01.s04t02n01td.Model.Domain.Fruita;
-import cat.itacademy.barcelonactiva.t.david.s04.t02.n01.s04t02n01td.Model.Services.FruitaService;
+import cat.itacademy.barcelonactiva.t.david.s04.t02.n01.s04t02n01td.Model.Services.IFruitaService;
 
 @RestController
 public class FruitaController {
 	
 	@Autowired
-	private FruitaService fruitaService;
+	private IFruitaService fruitaService;
 
 	@GetMapping("/fruita/getAll")
 	public ResponseEntity<List<Fruita>> getAll() {
